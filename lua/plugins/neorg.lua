@@ -7,17 +7,18 @@ return {
     neorg.setup({
       load = {
         ["core.defaults"] = {},
+        ["core.summary"] = {},
         ["core.concealer"] = {
           config = {
-            folds = true,
-            icon_preset = "diamond"
-          }
+            folds = false,
+            icon_preset = "diamond",
+          },
         },
         ["core.completion"] = {
           config = {
-            engine="nvim-cmp",
-            name="[Neorg]",
-          }
+            engine = "nvim-cmp",
+            name = "[Neorg]",
+          },
         },
         ["core.dirman"] = {
           config = {

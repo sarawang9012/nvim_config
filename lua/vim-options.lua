@@ -21,7 +21,15 @@ group = vim.api.nvim_create_augroup('Yank', { clear = true }),
 callback = function()
 vim.fn.system('clip.exe', vim.fn.getreg('"'))
 end,
-
 })
-
 end
+
+-- setup softwrap, breaking between words and
+-- indenting nicely paragraphs, lists, TODO
+vim.opt.wrap = true
+vim.opt.linebreak = true -- break on words
+vim.opt.breakindent = true -- align wrapped line with previous indent level
+vim.opt.breakindentopt = 'list:-1'
+vim.opt.formatlistpat = '^\\s*[-~>]\\+\\s\\((.)\\s\\)\\?'
+
+
