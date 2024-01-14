@@ -33,7 +33,7 @@ return {
         },
       },
     })
-    vim.cmd("set conceallevel=3")
+    vim.cmd("set conceallevel=2")
     vim.g.maplocalleader = ","
   end,
 }
