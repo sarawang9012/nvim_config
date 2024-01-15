@@ -14,10 +14,10 @@ return {
 				--auto_install = true,
 			})
 		end,
-    
 	},
 	{
 		"neovim/nvim-lspconfig",
+
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
