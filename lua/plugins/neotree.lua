@@ -30,7 +30,7 @@ return {
 	},
 	keys = {
 		{
-			"-",
+			"<C-n>",
 			function()
 				require("neo-tree.command").execute({
 					toggle = true,
@@ -169,6 +169,6 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
+--		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
 	end,
 }

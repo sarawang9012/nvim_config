@@ -26,9 +26,10 @@ end
 
 -- setup softwrap, breaking between words and
 -- indenting nicely paragraphs, lists, TODO
-vim.opt.wrap = true
+-- vim.opt.wrap = true //softwrap caused neorg concealer not working at linebreak
 vim.opt.linebreak = true -- break on words
 vim.opt.breakindent = true -- align wrapped line with previous indent level
+vim.opt.textwidth = 90
 vim.opt.breakindentopt = 'list:-1'
 vim.opt.formatlistpat = '^\\s*[-~>]\\+\\s\\((.)\\s\\)\\?'
 
